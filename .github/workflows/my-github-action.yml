@@ -1,0 +1,21 @@
+name: Custom GitHub Action with Email
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 21f2001369@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
+
+      - name: Display Date and Time
+        run: date
